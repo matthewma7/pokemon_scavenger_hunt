@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="wrapper">
+		<span class="logo"></span>
+		<span class="title">Pokémon Scavenger Hunt</span>
+		<div class="url">{{url}}</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Species count</th>
+					<th>Total</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class="table-wrapper">
+		<table>
+			<tbody>
+				<tr *ngFor="let trainer of trainers">
+					<th>{{trainer.name}}</th>
+					<th>{{trainer.trainerPokemons.length}}</th>
+					<th>{{getTotal(trainer.trainerPokemons)}}</th>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

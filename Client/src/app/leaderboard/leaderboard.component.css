@@ -1,0 +1,73 @@
+.container{
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.6); 
+    font-size: 150%;
+}
+
+.wrapper{
+    text-align: center;
+    margin: 10px;
+}
+
+.logo{
+    background: url(assets/pokeball2.png);
+    display: inline-block;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+}
+
+.title{
+    position: relative;
+    top: -35px;
+    left: 20px;
+    font-size: 40px;
+}
+
+.url{
+    font-size: 20px;
+}
+
+.table-wrapper{
+    position: absolute;
+    top: 175px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+table{
+    margin: 0 auto;
+}
+
+thead tr{
+    border-bottom: 1px solid;
+}
+
+tr{
+    line-height: 35px;
+}
+
+th{
+    width: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+}

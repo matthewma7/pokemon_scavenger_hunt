@@ -1,0 +1,9 @@
+<div class="container">
+	<div class="message" [ngClass]="messageClass">{{message}}</div>
+	<input #fileinput type="file" accept="image/*" style="visibility: hidden; width: 0px; height: 0px" (change)="photoTaken($event)">
+	<div class="pokeball" (click)="fileInput.nativeElement.click()" [hidden]="!pokeballVisible">
+	</div>
+	<div class="pokemon" [hidden]="!pokemonVisible">
+		<img [ngClass]="animationClass" src={{pokemonSrc}}>
+	</div>
+</div>

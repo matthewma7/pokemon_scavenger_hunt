@@ -1,0 +1,30 @@
+.container{
+    padding: 10px;
+    padding-top: 50px;
+    overflow-y: auto;
+    background: rgba(255,255,255,0.6);    
+    text-align: center;
+    height: calc(100vh - 60px);
+    height: -webkit-calc(100vh - 60px);
+    line-height: 20px;
+}
+
+.pokeball{
+    width: 15px;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.pokemons{
+    margin-top:20px;
+}
+
+.row-container{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.icon{
+    width: 100px;
+}

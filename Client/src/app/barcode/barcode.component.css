@@ -1,0 +1,32 @@
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.6); 
+    text-align: center;
+}
+
+.pokemonAndBarcode{
+    margin-bottom: 100px;
+}
+
+.title{
+    font-size: 24px;
+}
+
+.pokemon{
+    width: 500px;
+    display: inline-block;
+}
+
+.pokemon img{
+    width: 100%;
+}
+
+.barcode{
+    width: 1000px;
+    max-width: 100%;
+}

@@ -1,0 +1,16 @@
+{
+	"development": {
+		"port":8080,
+		"database": {
+			"dialect": "sqlite",
+			"storage": "./config/db.sqlite"
+		}
+	},	
+	"production": {
+		"port":80,
+		"database": {
+			"dialect": "sqlite",
+			"storage": "./config/db.sqlite"
+		}
+	}
+}

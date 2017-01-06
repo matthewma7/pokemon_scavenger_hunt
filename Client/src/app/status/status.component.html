@@ -1,0 +1,14 @@
+<div class="container">
+	<div>{{status?.trainer?.name}}</div>
+	<div><img class="pokeball" src="assets/pokeball.png">×{{status?.trainer?.pokeball}}</div>
+	<div>Species ×{{status?.pokemons.length}}</div>
+	<div class="pokemons">
+		<div class="row-container" *ngFor="let pokemon of status?.pokemons">
+			<div><img class="icon" src="assets/pokemon/{{pokemon.id}}.png"></div>
+			<div>
+				<span>{{pokemon.name}}</span>
+				<span>×{{pokemon.count}}</span>
+			</div>
+		</div>
+	</div>
+</div>

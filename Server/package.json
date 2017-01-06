@@ -1,0 +1,22 @@
+{
+  "name": "pokemon_scavenger_hunt_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Ma",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "jsqrcode": "0.0.6",
+    "moment": "^2.15.1",
+    "quagga": "^0.11.5",
+    "sequelize": "^3.24.3",
+    "sqlite3": "^3.1.6"
+  }
+}

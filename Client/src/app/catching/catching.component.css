@@ -1,0 +1,85 @@
+.container{
+    position: relative;
+    padding-top: 50px;
+    height: calc(100vh - 60px);
+    height: -webkit-calc(100vh - 60px);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.pokeball{    
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+    width: 60%;
+    height: 50%;
+    background:url("assets/pokeball.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.pokemon{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 100%;
+    height: 65%;
+    opacity: 1;
+}
+
+.pokemon img{
+    width: 100%;
+}
+
+.message{
+    position: relative;
+    z-index: 1;
+    margin: 70px 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 1);
+}
+
+.message.red{
+    color:red;
+}
+
+.message.blue{
+    color:blue;
+}
+
+.message.orange{
+    color:#FF6A00;
+}
+
+.message.purple{
+    color:#9000FF;
+}
+
+.wiggle {
+    animation-name: wiggleframe;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    transition-property: transform;
+    transition-duration: 0.7s;    
+}
+
+@keyframes wiggleframe {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.fade{
+    transition-property: opacity;
+    transition-duration: 3s;   
+    opacity: 0;
+}

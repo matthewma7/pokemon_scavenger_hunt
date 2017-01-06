@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="pokemonAndBarcode">
+		<div class="title">pokeshop</div>
+		<img class="pokemon" src="assets/pokeshop.png">
+		<img class="barcode" [appBarcode]="'shop'">
+	</div>
+	<div class="pokemonAndBarcode" *ngFor="let pokemon of pokemons">
+		<div class="title">{{pokemon.id}} {{pokemon.name}}</div>
+		<div (click)="pokemonClick($event.currentTarget)" class="pokemon">
+			<img class="original" src="assets/pokemon/{{pokemon.id}}.png">	
+		</div>
+		<img class="barcode" [appBarcode]="'@' + pokemon.id">
+	</div>
+</div>

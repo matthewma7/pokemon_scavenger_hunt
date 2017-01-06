@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">40</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1475978331000</longProp>
+        <longProp name="ThreadGroup.end_time">1475978331000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;base64Image&quot;:&quot;data:image/png;base64,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&quot;}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/catch</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">content-type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
